@@ -13,6 +13,7 @@ int main()
 
     if (pid == 0) {
         std::cout << "PID de GTA V non trouvé, vérifiez que le jeu est bien lancé" << std::endl;
+        exitcode("GTA V non trouvé", 1);
     }
 
     std::cout << "\n[+] GTA V trouve !" << std::endl;
