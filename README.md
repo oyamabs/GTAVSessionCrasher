@@ -11,7 +11,7 @@ Si vous vouliez créer une session publique solo, vous aviez à suspendre manuel
 ## C'est legit ?
 Oui, le programme n'interagit pas avec le jeu (sauf pour le freeze). Il n'y a donc aucun modding sur votre compte et (en théorie) aucune chance de se faire ban, si vous voulez une preuve, j'ai fait plein de tests sur mon compte principal, pour le développement du logiciel et la démo vidéo (peut-être même plus pour la démo que le développement du logiciel en lui-même).
 
-~~## Pourquoi il manque les accents dans le logiciel ? Tu sais pas écrire ?~~
+## Pourquoi il manque les accents dans le logiciel ? Tu sais pas écrire ?
 ~~Oui et non, mais pour les accents plaignez vous à Microsoft, pour pas avoir de support de base pour les accents.~~
 
 Les fautes sont corrigées ! Mais Microsoft, faites un support natif des accents ! 
