@@ -1,7 +1,7 @@
 #include "proc.h"
 
 DWORD getPid(const wchar_t* processname) {
-	DWORD pId;
+	DWORD pId = 0;
 
 	HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL);
 
@@ -13,7 +13,7 @@ DWORD getPid(const wchar_t* processname) {
 			bool found = false;
 
 			do {
-				if (!_wcsicmp(processname, pEntry.szExeFile)) {
+				if (!_wcsicmp(pEntry.szExeFile, processname)) {
 					pId = pEntry.th32ProcessID;
 					found = true;
 				}
