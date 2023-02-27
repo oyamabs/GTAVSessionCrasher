@@ -4,6 +4,8 @@
 
 int main()
 {
+    SetConsoleOutputCP(65001); // affichage des accents, merci à ce topic developpez.net https://www.developpez.net/forums/d2077938/c-cpp/cpp/utiliser-texte-accents/#post11545772
+
     std::cout << "GTA V - Session Crasher\n";
     std::cout << "\tPar oyamabs\n";
 
@@ -13,10 +15,11 @@ int main()
 
     if (pid == 0) {
         std::cout << "PID de GTA V non trouvé, vérifiez que le jeu est bien lancé" << std::endl;
+        presskey();
         exitcode("GTA V non trouvé", 1);
     }
 
-    std::cout << "\n[+] GTA V trouve !" << std::endl;
+    std::cout << "\n[+] GTA V trouvé !" << std::endl;
     std::cout << "[+] PID: " << pid << std::endl;
     std::cout << "[+] Suspension du jeu..." << std::endl;
 
@@ -29,7 +32,7 @@ int main()
     // defreezer le jeu
     unfreeze(pid);
 
-    std::cout << "[+] Suspension terminee. La session est vide" << std::endl;
+    std::cout << "[+] Suspension terminée. La session est vidée." << std::endl;
     
     // appuyer sur une touche pour quitter
     presskey();
